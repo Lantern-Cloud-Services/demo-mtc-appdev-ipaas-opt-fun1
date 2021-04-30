@@ -38,6 +38,7 @@ namespace Company.Function
             // APIM key
             string apiKey = System.Environment.GetEnvironmentVariable($"APIMKey");
             
+            // TODO put code in here to ignore a delete case
             if (input != null && input.Count > 0)
             {
                 log.LogInformation("Documents modified " + input.Count);
