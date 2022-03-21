@@ -34,7 +34,7 @@ namespace Company.Function
             LeaseCollectionName = "leases")]IReadOnlyList<Document> input, ILogger log)
         {
             // URL for finalizer logic app
-            string URL    = System.Environment.GetEnvironmentVariable($"finalizerLAEndpoint");
+            string URL    = System.Environment.GetEnvironmentVariable($"orderProcessorLAEP");
             // APIM key
             string apiKey = System.Environment.GetEnvironmentVariable($"APIMKey");
             
